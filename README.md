@@ -1,3 +1,3 @@
 # Razor-Pay
 
-https://ritiksharma1557.github.io/Razor-Pay/
+https://ritik7905.github.io/Razor-Pay/
