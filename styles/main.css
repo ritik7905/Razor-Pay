@@ -20,6 +20,7 @@ body {
           clip-path: polygon(100% 0, 100% 84%, 87% 100%, 0 89%, 0 0);
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .home .header {
@@ -122,6 +123,7 @@ body {
 .banner {
   width: 100%;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .banner .banner-data {
@@ -180,6 +182,7 @@ body {
 .payment {
   position: relative;
   margin-top: 125px;
+  overflow-x: hidden;
 }
 
 .payment .p-head {
@@ -329,6 +332,7 @@ body {
   padding-top: 10rem;
   -webkit-clip-path: polygon(0 0, 100% 8%, 100% 91%, 81% 100%, 11% 95%, 0 100%);
           clip-path: polygon(0 0, 100% 8%, 100% 91%, 81% 100%, 11% 95%, 0 100%);
+  overflow-x: hidden;
 }
 
 .payment-2 .p-head-2 {
@@ -492,6 +496,7 @@ body {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  overflow-x: hidden;
 }
 
 .container .item-1 {
@@ -525,5 +530,78 @@ body {
 
 .container .items p {
   font-size: 20px;
+}
+
+.features {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #2377C9;
+  padding-top: 163px;
+  padding-bottom: 70px;
+  -webkit-clip-path: polygon(100% 0, 100% 90%, 95% 100%, 0 100%, 0 15%);
+          clip-path: polygon(100% 0, 100% 90%, 95% 100%, 0 100%, 0 15%);
+  overflow-x: hidden;
+}
+
+.features .heading {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: center;
+}
+
+.features .para {
+  max-width: 386px;
+  margin: 20px auto;
+  font-weight: 550;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.features .heading::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  background-color: aqua;
+  position: absolute;
+  margin: 0px -14px;
+}
+
+.features .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.features .wrapper .items {
+  width: 17rem;
+  height: auto;
+  padding: 10px;
+}
+
+.features .wrapper .items img {
+  width: 65px;
+}
+
+.features .wrapper .items h2 {
+  font-size: 21px;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+.features .wrapper .items p {
+  font-weight: 550;
+  font-size: 16px;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

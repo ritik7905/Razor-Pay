@@ -14,12 +14,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 // Header-Section////////////////////////////
+
+//Hello- guise
 .home {
   background-color: #04032d;
   position: relative;
   clip-path: polygon(100% 0, 100% 84%, 87% 100%, 0 89%, 0 0);
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
   
   .header {
     display: flex;
@@ -98,6 +101,7 @@ body {
 .banner {
   width: 100%;
   height: 100vh;
+  overflow-x: hidden;
   .banner-data {
     width: 85%;
     height: 300px;
@@ -150,6 +154,7 @@ body {
 .payment {
   position: relative;
   margin-top: 125px;
+  overflow-x: hidden;
   .p-head {
     color: $black;
     text-align: center;
@@ -276,6 +281,7 @@ body {
   background-color: #04032d;
   padding-top: 10rem;
   clip-path: polygon(0 0, 100% 8%, 100% 91%, 81% 100%, 11% 95%, 0 100%);
+  overflow-x: hidden;
 
   .p-head-2 {
     color: $white;
@@ -415,6 +421,7 @@ body {
   gap: 10px;
   flex-wrap: wrap;
   justify-content: space-around;
+  overflow-x: hidden;
   .item-1{
     font-size: 30px;
     span{
@@ -441,4 +448,75 @@ body {
       font-size: 20px;
     }
   }
+}
+
+// Features
+
+.features{
+  
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #2377C9;
+  padding-top: 163px;
+  padding-bottom: 70px;
+  clip-path: polygon(100% 0, 100% 90%, 95% 100%, 0 100%, 0 15%);
+  overflow-x: hidden;
+
+  .heading{
+    font-size: 1rem;
+    font-weight: 800;
+    color: $white;
+    text-align: center;
+  }
+  .para{
+    max-width: 386px;
+    margin: 20px auto;
+    font-weight: 550;
+    font-size: 15px;
+    color: $white;
+    
+    
+  }
+ .heading::after{
+  content: "";
+  width: 30px;
+  height: 4px;
+  background-color: aqua;
+  position: absolute;
+  margin: 0px -14px;
+
+}
+// Wrapper
+
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  .items{
+    width: 17rem;
+    height: auto;
+    padding: 10px;
+    
+    img{
+      width: 65px;
+    }
+    h2{
+      font-size: 21px;
+      line-height: 35px;
+      color: $white;
+    }
+    p{
+      font-weight: 550;
+      font-size: 16px;
+      color: $white;
+    }
+  }
+  
+
+}
+
 }
