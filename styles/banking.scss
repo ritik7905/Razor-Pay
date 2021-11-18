@@ -1,0 +1,88 @@
+@import "../variables/color";
+@import "../variables/mixins";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 65.5%;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 1rem;
+    padding-top: 25px;
+    padding-left: 15rem;
+    background-color:#04032D;
+  
+  .nav {
+    width: 50%;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      &:nth-child(1) {
+        margin-right: 100px;
+        img {
+          width: 90%;
+          display: block;
+          margin-right: 9.1rem;
+        }
+      }
+      li {
+        //   font-size: 1.1rem;
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: $white;
+        }
+      }
+    }
+  }
+  .log {
+    position: relative;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    li {
+      font-size: 1.1rem;
+      &:nth-child(2) {
+        border: 1px solid $theme-link;
+        padding: 5px 25px;
+        border-radius: 5px;
+        outline: none;
+        a {
+          text-decoration: none;
+          color: $white;
+        }
+      }
+      &:nth-child(3) {
+        padding: 5px 25px;
+        background-color: $white;
+        border-radius: 5px;
+        outline: none;
+        color: $theme-link !important;
+        a {
+          text-decoration: none;
+          color: $theme-link;
+        }
+      }
+      img {
+        position: absolute;
+        top: 8px;
+      }
+      // font-size: 1.1rem;
+      list-style: none;
+    }
+  }
+}
